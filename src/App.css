@@ -1,38 +1,685 @@
-.App {
-  text-align: center;
+.test_row {
+  background-color:azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textLinks{
+  color: black;
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.textLinks:hover{
+  color: darkred;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* #intInstroLink {
+  color: orange;
+  text-decoration: none;
+}
+
+#intInstroLink:hover {
+  color: blue;
+  text-decoration: none;
+} */
+
+.blockText,
+.bioBodyText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+
+}
+
+.bioBodyTextSmall {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7em;
+  text-align: justify;
+}
+
+#contactEmail:hover {
+  color: darkmagenta;
+  text-decoration: none;
+}
+
+
+.trail {
+  /* className for the trail elements */
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: black;
+}
+
+body {
+  font-size: smaller;
+  font-weight: 100;
+  /* cursor:none; */
+}
+
+.jumbotron {
+  padding: 30px;
+  margin: 0;
+}
+
+.navbar {
+  background-color: white;
+}
+
+
+.greenLink {
+  color: olivedrab;
+}
+
+.instroImage {
+  border: 1px;
+  border-color: black;
+}
+
+.bioPicture {
+  border-radius: 100;
+}
+
+.mappedPortfolioImage:hover {
+  /* opacity: 0.8; */
+  transition: 1s;
+  filter: saturate(100%);
+}
+
+.mappedPortfolioImage {
+  transition: 1s;
+  filter: saturate(25%);
+  
+}
+
+.projectBack {
+  color: slategrey;
+}
+
+.projectBack:hover {
+  color: darkred;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.bioButtonCL {
+  justify-content: left;
+  margin: -0.5rem;
+  color: black;
+}
+
+.bioButtonOP {
+  justify-content: left;
+  margin: -0.5rem;
+  color: black;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 200px) {
+  .socialsMenu  {
+    justify-content: left;
+    margin: -0.85rem;
+  }
+
+  .test_col {
+    text-align: center;
+    justify-content: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .socialsMenu  {
+    justify-content: right;
+  }
+  .test_col {
+    text-align: center;
+    width: '15%';
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .socialsMenu  {
+    justify-content: right;
+  }
+
+  .test_col {
+    text-align: right;
+  }
+
 }
 
-@keyframes App-logo-spin {
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .socialsMenu  {
+    justify-content: right;
+  }
+}
+
+
+
+
+
+
+
+
+/*------------------PAGE BORDER END-----------------------------*/
+
+/*------------------HEADER TEXT ANIMATION BEGIN-----------------------------*/
+
+/*Marc Rickenbach Text*/
+.name_text::after {
+  content: "Marc Rickenbach";
+  color: black;
+  transition: color 0.7s;
+}
+
+.name_text:hover::after {
+  content: "PhD, CompLit & Sound Studies";
+  color: lightgrey;
+  transition: color 0.7s;
+}
+
+/*Instrument Designer Text*/
+.instrument_text::after {
+  content: "Instrument Designer";
+  color: black;
+  transition: color 0.7s;
+}
+
+.instrument_text:hover::after {
+  content: "bleep bloop bleep bloop";
+  color: lightgrey;
+  transition: color 0.7s;
+}
+
+.software_text::after {
+  content: "Software Developer";
+  color: black;
+  transition: color 0.7s;
+}
+
+.software_text:hover::after {
+  content: "C/C++/JavaScript";
+  color: lightgrey;
+  transition: color 0.7s;
+}
+
+/*Software Developer Text*/
+.typewriter2 {
+  color: black;
+  transition: color 0.7s;
+  cursor: pointer;
+}
+
+.typewriter2:hover {
+  color: lightgrey;
+  transition: color 0.7s;
+  cursor: default;
+}
+
+.typewriter0 {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing_A .4s steps(30, end);
+}
+
+.typewriter1 {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing_B 0.3s steps(30, end);
+}
+
+.typewriter2 {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing_C 0.6s steps(30, end);
+}
+
+
+/* The typing effect */
+@keyframes typing_A {
   from {
-    transform: rotate(0deg);
+    width: 90%
   }
+
   to {
-    transform: rotate(360deg);
+    width: 100%
   }
 }
+
+@keyframes typing_B {
+  from {
+    width: 65%
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes typing_C {
+  from {
+    width: 25%
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/*------------------HEADER TEXT ANIMATION END-----------------------------*/
+
+
+/*------------------SOCIAL ICONS FADE BEGIN -----------------------------*/
+
+.fa-instagram:hover {
+  opacity: 25%;
+  color: orangered;
+  transition: opacity 0.7s;
+}
+
+.fa-github:hover {
+  opacity: 25%;
+  transition: opacity 0.7s;
+}
+
+.fa-linkedin:hover {
+  opacity: 25%;
+  color: darkblue;
+  transition: opacity 0.7s;
+}
+
+.fa-bandcamp:hover {
+  opacity: 25%;
+  color: teal;
+  transition: opacity 0.7s;
+}
+
+.fa-envelope {
+  color: black;
+}
+
+.fa-envelope:hover {
+  opacity: 25%;
+  color: olivedrab;
+  transition: opacity 0.7s;
+}
+
+/*------------------SOCIAL ICONS FADE END -----------------------------*/
+
+
+.bioSwitch {
+  position: relative;
+  display: inline-block;
+  /* width: 89px; */
+  width: 95px;
+  height: 34px;
+}
+
+.instrumentSwitch {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  height: 34px;
+}
+
+.softwareSwitch {
+  position: relative;
+  display: inline-block;
+  width: 205px;
+  height: 34px;
+}
+
+.writingSwitch {
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 34px;
+}
+
+.contactSwitch {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 34px;
+}
+
+#bioTog {
+  display: none;
+}
+
+.bioTog {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+
+.instrumentTog {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.softwareTog {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.writingTog {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.contactTog {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+
+}
+
+
+
+input:checked+.bioTog {
+  color: darkblue;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+input:checked+.instrumentTog {
+  color: chocolate;
+  background-color: white;
+}
+
+input:checked+.softwareTog {
+  color: darkred;
+  background-color: white;
+}
+
+input:checked+.writingTog {
+  color: darkgrey;
+  background-color: white;
+}
+
+input:checked+.contactTog {
+  color: green;
+  background-color: white;
+}
+
+/* ------------------------------------------- */
+
+
+/*------------------SECTION WINDOW BEGINNING -----------------------------*/
+
+.aboutBlock {
+  display: none;
+}
+
+.instrumentBlock {
+  display: none;
+}
+
+.softwareBlock {
+  display: none;
+}
+
+.contactBlock {
+  display: none;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/*------------------SECTION WINDOW BEGINNING -----------------------------*/
+
+.instrumentImage {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.instrumentDescription {
+  transition: 0.5s ease;
+  position: relative;
+  left: 50%;
+  top: 1%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.objectContainer {
+  position: relative;
+  background-color: white;
+  transition: 0.6s ease;
+}
+
+.objectDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.objectContainer:hover .objectDescription {
+  opacity: 1;
+}
+
+.objectContainer:hover .instrumentImage {
+  opacity: 0.3;
+}
+
+.objectContainer:hover {
+  background-color: black;
+  transition: 0.2s ease;
+}
+
+.objectText {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  opacity: 1;
+  font-size: medium;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+#bioHeader,
+#instrumentHeader,
+#softwareHeader,
+#textHeader,
+#contactHeader {
+  background-color: transparent;
+  border: none;
+  color: black;
+  opacity: 0.8;
+  font-family: "Varela";
+}
+
+.btn h1 {
+  color: black;
+  text-decoration: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  color: green;
+}
+
+.card-header {
+  border-bottom: none !important;
+}
+
+.card {
+  border: none !important;
+}
+
+.card-body {
+  font-size: small;
+}
+
+#copyright {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-small;
+  opacity: 30%;
+  align-items: center;
+
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.aboutmeBTN {
+  background-color: white;
+  color: green;
+}
+
